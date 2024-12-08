@@ -1,0 +1,65 @@
+body{
+    background-color:#F7ECDE;
+    margin: 0;
+}
+.mm{
+    
+}
+
+.myfont{ 
+    font-family: h1;
+    font-size: 3.6rem;
+    margin-top: 21%;
+    position: relative; 
+  
+    
+}
+.myfont::after{
+    content: "";
+  position: absolute;
+  width: 97%;
+  height: 25%;
+  left: 1%;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+.myfont:hover::after{
+    height: 60%;
+}
+.line-dashed{
+    margin: 20px 0;
+    border: none;
+    border-top: 2px dotted #352e28;
+    
+}
+.text{
+  
+   background-image: linear-gradient(to right, #3ca55c, hsl(41, 100%, 58%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  }
+.par{
+    font-family: sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.box{
+    box-shadow:#D99C39 ;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+   
+}
+
+th {
+    background-color: #f7f7f7;
+}

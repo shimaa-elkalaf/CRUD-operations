@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container tex">
+        <div class="row">
+            <div class="col">
+                <div class="text-center mb-5 w-25 m-auto mm">
+                    <h1 class="myfont">Bookmarker</h1>
+                </div>
+                <hr class="line-dashed">
+                <div
+                    class="text-center text w-100 p-3 py-4 mt-3 d-flex flex-column justify-content-center align-items-center gap-4">
+                    <p class="lead par text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></p>
+                </div>
+                <div>
+                    <div class="box w-100 d-flex flex-column justify-content-center">
+                        <label for="nameInput" class="pb-2 fw-semibold">
+                            <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            Site Name</label>
+                        <input type="text" placeholder="Bookmark Name" class="form-control" id="nameInput" />
+                    </div>
+                    <div class="mt-3 box w-100 d-flex flex-column justify-content-center">
+                        <label for="webURL" class="pb-2 fw-semibold">
+                            <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            Website URL</label>
+                        <input type="text" placeholder="Website URL" class="form-control" id="webURL" />
+                    </div>
+                   <div class="d-flex  justify-content-center "> 
+                    <button  onclick="addBookmark()" class="btn btn-danger mt-4 px-5">Submit </button>
+                </div>
+                   <hr class="line-dashed">
+                </div>
+                <div class="mt-5">
+                    <table>
+                        <thead>
+                            <tr >
+                                <th class="text-center">Index</th>
+                                <th class="text-center">Website Name</th>
+                                <th class="text-center">Visit</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookmarkTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+       
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
